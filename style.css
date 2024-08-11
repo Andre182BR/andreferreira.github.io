@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    margin:0; 
+    padding:0;
+  }
+
+  body{
+    background-color: #003366;
+  }
+/* Container do Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: c; /* Cor de fundo inicial */
+    color: #ffffff;
+    animation: colorChange 1.8s infinite;/* Aplicando a animação ao header */
+}
+
+/* Estilo do link no header */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    
+}
+
+header a:hover {
+    color: #ff0000;
+    transform: scale(1.5); /* Aumenta o tamanho do link */
+}
+
+/* Efeito de mudança de cor */
+@keyframes colorChange {
+    25% { background-color: #5373a3; }
+    50% { background-color: #284e72; }
+    75% { background-color: #17527a; }
+    100% { background-color: #003366; }
+}
+
+#sobremim {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    position: relative;
+    background-color: #dfd5c7;
+    border-radius: 8px;
+    
+  }
+
+.sobre { /*h1 do sobre mim*/
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    font-size: 55px;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.paragrafo1 { /*paragrafo sobre mim*/
+    line-height: 200%;
+    margin-bottom: 32px;
+    padding-left: 25px;
+}
+
+.fotodefundo {
+    border-radius: 200px;
+    margin-right: 20px;
+}
+
+.container-educacional { /*Formação educacional*/
+    max-width: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dfd5c7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.titulo-formacao { /* formatando o h1 no menu formação educacional*/
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/*estilizando as listas da formação educacional*/
+.cursos-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cursos-lista li {
+    font-size: 1.25rem;
+    margin: 10px 0px;
+    color: #000000;
+    padding-left: 10px;
+    position: relative;
+}
+
+.cursos-lista li::before {
+    content: '*';
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.cursos-lista li:hover {
+    color: #ff0000;
+    
+}
+
+/*estilizando o portfolio*/
+.portfolio-container {
+    max-width: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dfd5c7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.titulo-portfolio {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.paragrafo2 {
+    font-size: 1.25rem;
+    line-height: 200%;
+    color: #000000;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+
+.video {
+    display: flex; /* Define um layout flexível para posicionar vídeos lado a lado */
+    gap: 20px; /* Espaçamento entre os vídeos */
+    justify-content: space-between;
+}
+
+.video a {
+    flex: 1;
+    display: block; /* Permite que o link ocupe o espaço total de seu contêiner */
+    position: relative;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave para transformações */
+}
+
+.video a:hover video {
+    transform: scale(1.05); /* Aumenta o tamanho do vídeo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+/*estilizando o formulario*/
+.contato-container {
+    max-width: 400px;
+    margin: 1px;
+    padding: 20px;
+    background-color: #dfd5c7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+
+}
+
+.titulo-contato {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+}
+
+button:hover {
+    background-color: #0056b3; /* Muda a cor de fundo do botão ao passar o mouse */
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #dfd5c7; /* Cor de fundo inicial */
+    color: #000000;
+    font-size: 1.25rem;
+    border-radius: 8px;
+}
+
+footer div {
+    margin-bottom: 10px; /* Espaçamento inferior entre as divisões no rodapé */
+}
+
+
+footer nav a {
+    color: #000000;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+}
+
+footer nav a:hover {
+    color: #ff0000; /* Cor dos links ao passar o mouse */
+}
+
+#copyright {
+    background-color: #000000; /* Cor de fundo para a seção de direitos autorais */
+    color: #ffffff; /* Texto em cinza claro */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento vertical */
+    font-size: 14px; /* Tamanho da fonte menor */
+}
+
+#copyright a {
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s ease; /* Transição suave para a cor do link */
+}
+
+#copyright a:hover {
+    color: #0056b3; /* Cor do link ao passar o mouse */
+}

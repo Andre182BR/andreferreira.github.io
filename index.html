@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Meu Portfólio</a>
+        <nav>
+            <a href="#sobremim">Sobre Mim</a>
+            <a href="#formacao">Formação Educacional</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="sobremim">
+            <img src="Foto Sobre mim.jpg" alt="Minha Foto" class="fotodefundo">
+            <div>
+                <h1 class="sobre">Sobre Mim</h1>
+                <p class="paragrafo1">Olá, meu nome é André, tenho 30 anos, trabalho em um escritório de uma loja de
+                    calçados à 10 anos, sempre gostei muito de tecnologia e de entender como tudo funciona, por este
+                    motivo me ingressei no curso de ADS da Uninter para mudar de área, meu passatempo preferido é
+                    assistir a séries e filmes e tambem jogar video games.</p>
+            </div>
+
+        </section>
+        <section id="formacao">
+            <div class="container-educacional">
+                <h1 class="titulo-formacao">Formação Educacional</h1>
+                <ul class="cursos-lista">
+                    <li>Ensino Médio Completo</li>
+                    <li>Informatica Básica e Profissionalizante(ITEP)</li>
+                    <li>Técnico de Administração (IFPR)</li>
+                    <li>Cursando ADS (Uninter)</li>
+                    <li>Cursando Programação (One Bit Code)</li>
+                </ul>
+
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="portfolio-container">
+                <h1 class="titulo-portfolio">Portfólio</h1>
+                <p class="paragrafo2">Aqui vou apresentar dois sites que fiz em conjunto com a One Bit Code, o primeiro
+                    é um site de um consultório veterinário chamado Petlife onde temos o html, o CSS para estilizar a
+                    página e um pouco de JavaScript, apresenta também link que direciona para o whatsapp do consultório.
+                    O outro site é uma página que remete ao Sea World, onde temos varios modelos de estilização onde
+                    tem um video inicial que fica passando infinitamente. Esses dois sites me inspiraram a realizar
+                    este portfólio. </p>
+                <div class="video">
+                    <a href="https://github.com/Andre182BR/PetLife.git" target="_blank">
+                        <video src="PetLife.mp4" autoplay loop muted></video>
+                    </a>
+                    <a href="https://github.com/Andre182BR/World-of-Seal.git" target="_blank">
+                        <video src="Sea World.mp4" autoplay loop muted></video>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="contato-container">
+                <h1 class="titulo-contato">Contato</h1>
+                <form action="#">
+                    <!--Formulário onde coloca o nome.-->
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Ex.: André Felipe"><br><br>
+                    <!--Formulário onde coloca o Email-->
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ex.:email@email.com"><br><br>
+                    <!--Formulário para escrever Mensagem-->
+                    <label for="mensagem">Digite sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="6"
+                        placeholder="Digite aqui sua mensagem..."></textarea><br><br>
+
+                    <button type="submit">Enviar</button>
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <div>
+            <strong class="links-rapidos">Links rápidos</strong><br><br>
+
+            <nav>
+                <a href="#sobremim">Sobre Mim</a>
+                <a href="#formacao">Formação Educacional</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+        </div>
+
+    </footer>
+    <div id="copyright">
+        Desenvolvido por André <a href="https://wa.me/554199103235" target="_blank"> (41) 99910-3235</a>
+    </div>
+
+</body>
+
+</html>
